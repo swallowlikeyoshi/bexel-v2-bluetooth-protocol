@@ -1,13 +1,14 @@
-# LWS-1608 BMS — Reverse-Engineered BLE Protocol
+# Bexel V2 Bluetooth Protocol (LWS-1608 BMS)
 
-Open documentation and example code for reading a **LWS-1608** smart Battery
-Management System (BMS) over Bluetooth Low Energy.
+Open documentation and example code for reading the **BEXEL / W-Works Korea
+"자작자동차 2세대" (V2)** battery pack's smart BMS over Bluetooth Low Energy.
 
-This is the BMS shipped inside several generic Chinese lithium packs — including
-the **더블유웍스코리아 (W-Works Korea) 2nd-gen pack** used by student EV / homebuilt
-("자작") teams — and paired with the iOS/Android app **`smartbms-Lion1`**. The PCB
-is marked [`gspbattery.com`](https://www.gspbattery.com) with no other model
-number, so it is otherwise undocumented.
+The pack's Bluetooth module advertises as **`LWS-1608`**, is paired with the
+iOS/Android app **`smartbms-Lion1`**, and its PCB is marked
+[`gspbattery.com`](https://www.gspbattery.com) — otherwise undocumented. The same
+BMS appears in other generic lithium packs, so this may work beyond the Bexel V2.
+
+Pack reference specs (14S16P, 51.8 V, 80 Ah): [`docs/BATTERY.md`](docs/BATTERY.md).
 
 If your pack advertises as **`LWS-1608`** over BLE and its app is
 **`smartbms-Lion1`**, this repo lets you read State-of-Charge, per-cell voltages,
@@ -30,6 +31,7 @@ drive your own dashboard/cluster or data logger.
 | [`docs/PROTOCOL.md`](docs/PROTOCOL.md) | Full BLE + frame protocol spec (services, handshake, poll commands, frame layouts, checksum) |
 | [`examples/esp32-platformio/`](examples/esp32-platformio/) | ESP32 (Arduino/PlatformIO + NimBLE) client that prints live telemetry |
 | [`examples/python/`](examples/python/) | Cross-platform Python reader using [`bleak`](https://github.com/hbldh/bleak) |
+| [`docs/BATTERY.md`](docs/BATTERY.md) | Bexel V2 pack reference specs (cell, pack, connectors) |
 
 ## The 30-second version
 
