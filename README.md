@@ -86,4 +86,5 @@ welcome.
 
 ## License
 
-[MIT](LICENSE) — do whatever you want, no warranty. Attribution appreciated.
+[Beerware (Revision 42)](LICENSE) — do whatever you want; keep the notice, and
+buy me a beer if we ever meet. No warranty.

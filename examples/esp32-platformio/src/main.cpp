@@ -6,7 +6,7 @@
 // Protocol: see ../../docs/PROTOCOL.md
 // Read-only: this sketch never changes any BMS setting.
 //
-// License: MIT
+// License: Beerware (Revision 42) — see LICENSE
 
 #include <NimBLEDevice.h>
 

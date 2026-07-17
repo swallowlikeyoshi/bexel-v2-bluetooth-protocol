@@ -8,7 +8,7 @@ Usage:
     pip install -r requirements.txt
     python read_bms.py
 
-License: MIT
+License: Beerware (Revision 42) — see LICENSE
 """
 import asyncio
 import struct
