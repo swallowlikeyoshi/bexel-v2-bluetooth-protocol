@@ -1,0 +1,13 @@
+# PlatformIO
+.pio/
+.vscode/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+# OS
+.DS_Store
+# BLE captures (add your own under docs/captures/ if you want to share)
+*.pklg
+*.pcapng
